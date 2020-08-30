@@ -1,13 +1,16 @@
-require('./bootstrap');
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Appres from './Appres';
+import Example from './components/Example';
+import AutoGrid from './components/AutoGrid';
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Appres />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <div className="container">
+     <h1 className="text-info text-center text-uppercase">Laravel react material ui</h1>   
+     <Example />
+     <AutoGrid />
+    </div>
+  );
+}
 
+export default App;
